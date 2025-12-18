@@ -2,7 +2,6 @@
 
 A premium, high-fidelity UI design demonstration built for a luxury jewelry brand. This project showcases modern web development practices, focusing on rich aesthetics, responsive layouts, and fluid micro-interactions.
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![React](https://img.shields.io/badge/React-19-61dafb.svg?style=flat&logo=react)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-38b2ac.svg?style=flat&logo=tailwindcss)
 ![Vite](https://img.shields.io/badge/Vite-5.0-646cff.svg?style=flat&logo=vite)
@@ -47,7 +46,7 @@ Follow these steps to set up the project locally on your machine.
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/KushalRoyChowdhury/Jewellary-Landing-Page
+   git clone https://github.com/KushalRoyChowdhury/Jewellery-Landing-Page
    cd "Jewellary Landing Page/landing-page"
    ```
 
