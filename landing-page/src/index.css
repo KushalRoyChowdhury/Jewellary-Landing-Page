@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+    /* Fonts */
+    --font-serif: "Playfair Display", serif;
+    --font-sans: "Lato", sans-serif;
+
+    /* Colors */
+    --color-primary: #1A1A1A;
+    --color-secondary: #6B7280;
+    --color-accent: #EF4444;
+    --color-accent-hover: #DC2626;
+    --color-background: #FAF9F6;
+    --color-surface: #FFFFFF;
+}
+
+@utility container-custom {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-serif);
+}
+
+/* Glint Effect */
+.btn-glint {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-glint::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(255, 255, 255, 0.6) 50%,
+        transparent 100%
+    );
+    transform: skewX(-20deg) translateX(-150%);
+    transition: transform 0.5s;
+    pointer-events: none;
+}
+
+.btn-glint:hover::after {
+    transform: skewX(-20deg) translateX(400%);
+    transition: transform 0.7s ease-in-out;
+}
+
+/* Link Underline Animation */
+.link-underline {
+    position: relative;
+}
+
+.link-underline::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: currentColor;
+    transition: width 0.3s ease-out;
+}
+
+.link-underline:hover::after {
+    width: 100%;
+}
